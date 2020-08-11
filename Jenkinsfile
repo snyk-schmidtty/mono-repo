@@ -14,7 +14,7 @@ pipeline {
                     curl -Lo ./snyk "${snyk_cli_dl_linux}"
                     chmod +x snyk
                     ls -la
-                    ./snyk -v
+                    snyk -v
                 '''
             }
         }
