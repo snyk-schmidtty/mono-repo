@@ -5,7 +5,7 @@ pipeline {
         stage('Snyk Test') {
             steps {
                 sh 'ls -la'
-                snykSecurity snykInstallation: 'SnykPlugin', snykTokenId: 'SnykAPI'
+                snykSecurity snykInstallation: 'SnykPlugin', snykTokenId: 'SnykAPI', additionalArguments: '--all-projects'
             }
         }
     }
