@@ -1,5 +1,6 @@
 name: GitHub Actions Snyk Scan
 
+
 on: [push]
 
 jobs:
